@@ -6,6 +6,12 @@
   background-color: rgba(33,26,44,255);
 }
 
+.row{
+  display: flex;
+  justify-content: center;
+  gap: 5rem
+}
+
 .intro-content{
   display: flex;
   flex-direction: row-reverse;
