@@ -6,3 +6,8 @@
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
 }
+
+body{
+  background-color: rgba(33,26,44,255);
+  overflow-x: hidden !important;
+}

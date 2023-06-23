@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom'
 
 export default function Header(){
     return(
-        <Container className='text-light'>
+        <Container className='py-3 text-light'>
             <Navbar>                 
                 <Navbar.Collapse id='basic-navbar-nav'>
                     <Nav.Link as={Link} to='/' className='text-light'>Home</Nav.Link>

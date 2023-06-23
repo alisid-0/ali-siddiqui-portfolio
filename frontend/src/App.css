@@ -3,42 +3,34 @@
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
-  /* background-image: url(./assets/bg.jpg); */
-  background-repeat: no-repeat;
-  background-size: 150%;
-  background-position: 100% 0%;
-  overflow: hidden;
+  background-color: rgba(33,26,44,255);
 }
 
-html, body, #root {
-  min-height: 100%;
-  width: 100%;
-  margin: 0;
-  padding: 0;
+.intro-content{
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  margin: 0px !important;
 }
 
-.bg-home{
-  background-image: url(./assets/bg.jpg);
-  background-repeat: no-repeat;
-  background-size: 150%;
-  background-position: 100% 0%;
+.intro-page{
+  margin-top: 10rem;
+  margin-bottom: 15rem;
 }
 
-.bg-blank{
-  background-image: url(./assets/bg3.png);
-  /* background-repeat: no-repeat;
-  background-size: 150%;
-  background-position: 100% 0%; */
+.intro-section{
+  margin-top:10rem;
+  margin-left: 10rem !important;
 }
 
-.home{
-  min-height: 1000px;
+.macbook{
+  width: 500px !important;
+  height: 500px !important;
 }
 
-.intro{
-  max-width: 600px !important;
-  margin-top: 20rem ;
-  margin-left: 40rem !important;
+canvas{
+  width: 700px !important;
+  height: 600px !important;
 }
 
 
@@ -48,12 +40,8 @@ html, body, #root {
   gap:2rem;
 }
 
-.login-button{
-  padding-left: 54rem !important;
-}
 
-.login-page{
-  min-height: 1000px;
+.login-container{
   max-width: 400px !important;
 }
 
@@ -85,4 +73,45 @@ html, body, #root {
   margin-bottom: 50px !important;
   padding-bottom:160px !important;
   overflow-wrap: break-word !important;
+}
+
+.login-button{
+  margin-left: 63rem !important;
+}
+
+@media (max-width: 1399px) {
+  .login-button {
+    margin-left: 540px !important;
+  }
+}
+
+@media (max-width: 1199px) {
+  .login-button {
+    margin-left: 366px !important;
+  }
+  .home-about{
+    display:flex;
+    flex-direction: column-reverse !important;
+  }
+  .home-about img{
+    padding-bottom: 10px;
+  }
+  .home-about p{
+    text-align: center;
+  }
+}
+
+@media (max-width: 1019px) {
+  .login-button {
+    margin-left: 340px !important;
+  }
+}
+
+
+@media (max-width: 991px) {
+  .login-button {
+    background: none !important;
+    border: none !important;
+    margin-left: 0px !important
+  }
 }
