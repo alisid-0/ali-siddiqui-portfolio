@@ -15,6 +15,9 @@ import l4 from '../assets/l4.png'
 import l5 from '../assets/l5.png'
 import l6 from '../assets/l6.png'
 import l7 from '../assets/l7.png'
+import lun2 from '../assets/2.png'
+import lun3 from '../assets/3.png'
+import lunaris from '../assets/lunaris.gif'
 
 
 
@@ -43,9 +46,27 @@ function Intro(){
     )
 }
 
+function About(){
+    let {scrollY} = useScroll()
+    let y = useTransform(scrollY, [1000,1500], ["0%", "-100%"])
+    return(
+        <motion.div className='skills-page text-light' style={{ y }}>
+            <Container>
+                <h1 style={{fontSize:`150px`, marginRight:`40rem`}} className='pb-5 mb-5'>About Me</h1>
+                <Row>
+                    <Col>
+                        <p>I am the founder of NervCorp, a one-man videogame development company, and a versatile Full Stack Developer with a background in indie game development. Demonstrated ability to deliver high-quality projects by leveraging extensive experience in both the scientific and video game development fields. Armed with international exposure and scientific knowledge to create immersive, user-friendly digital experiences. I'm passionate about integrating a science background and diverse cultural perspective to drive innovation and inclusivity in the software development field.</p>
+
+                    </Col>
+                </Row>
+            </Container>
+        </motion.div>
+    )
+}
+
 function Projects(){
     let {scrollY} = useScroll()
-    let y = useTransform(scrollY, [1000,3000], ["0%", "-100%"])
+    let y = useTransform(scrollY, [2000,2500], ["0%", "-100%"])
     return(
         <motion.div className='skills-page text-light' style={{ y }}>
             <Container>
@@ -115,9 +136,22 @@ function Projects(){
                     <Row>
                         <Col>
                             <h1 style={{fontSize: `70px`}}>Lunaris</h1>
+                            <p>An engaging and immersive videogame in development using Unreal Engine. Focused on creating a captivating user experience with unique gameplay mechanics and visually appealing design.</p>
+                            <p>Built with <em>Unreal Engine 5 and Blender.</em></p>
+                            <p>Project is still in development but you can check out the <a href='https://nervcorp.itch.io/lunaris'>itch.io site here.</a> and view updates on <a href=''>NervCorp.</a></p>
                         </Col>
                         <Col>
-                            
+                            <Carousel>
+                                <Carousel.Item>
+                                    <img src={lun2} className='project-img'></img>
+                                </Carousel.Item>
+                                <Carousel.Item>
+                                    <img src={lun3} className='project-img'></img>
+                                </Carousel.Item>
+                                <Carousel.Item>
+                                    <img src={lunaris} className='project-img'></img>
+                                </Carousel.Item>
+                            </Carousel>
                         </Col>
                     </Row>
                 </Container>
@@ -128,7 +162,7 @@ function Projects(){
 
 function Connect(){
     let {scrollY} = useScroll()
-    let y = useTransform(scrollY, [3000,5000], ["0%", "-100%"])
+    let y = useTransform(scrollY, [3000,3500], ["0%", "-100%"])
     return(
         <motion.div className='skills-page text-light' style={{ y }}>
             <Container>
@@ -155,10 +189,13 @@ function Connect(){
     )
 }
 
+
+
 export default function Home() {
   return (
     <div className='home'>
         <Intro/>
+        <About/>
         <Projects/>
         <Connect/>
     </div>
