@@ -18,12 +18,13 @@ import l7 from '../assets/l7.png'
 import lun2 from '../assets/2.png'
 import lun3 from '../assets/3.png'
 import lunaris from '../assets/lunaris.gif'
+import pic from '../assets/pic.png'
 
 
 
 function Intro(){
     let {scrollY} = useScroll()
-    let y = useTransform(scrollY, [0,1000], ["0%", "-100%"])
+    let y = useTransform(scrollY, [0,500], ["0%", "-100%"])
 
     return(
         <motion.div className='intro-page' style={{ y }}>
@@ -55,7 +56,16 @@ function About(){
                 <h1 style={{fontSize:`150px`, marginRight:`40rem`}} className='pb-5 mb-5'>About Me</h1>
                 <Row>
                     <Col>
-                        <p>I am the founder of NervCorp, a one-man videogame development company, and a versatile Full Stack Developer with a background in indie game development. Demonstrated ability to deliver high-quality projects by leveraging extensive experience in both the scientific and video game development fields. Armed with international exposure and scientific knowledge to create immersive, user-friendly digital experiences. I'm passionate about integrating a science background and diverse cultural perspective to drive innovation and inclusivity in the software development field.</p>
+                        <p>Hello, I'm Ali Siddiqui. I've always been passionate about connecting people and making a difference in the world. Once upon a time, I thought I would accomplish that through a career in medicine, but a computer science elective in college quickly changed my perspective.</p>
+                        <p>While juggling roles as a restaurant server and a math tutor, I discovered my love for computer science, especially video game development and design. A personal turning point was when I had to take time off school to care for my ailing mother. This period not only shaped my personal life but also my career trajectory.</p>
+                        <p>Inspired by the challenges we faced during her illness, I dedicated myself to self-learning the intricacies of software development. The question that drives me every day is, "How can technology and user experiences be crafted to connect people across all professions worldwide and facilitate better transfer of ideas and information?" In this quest, I seek to prevent others from experiencing what caused the loss of my mother and improve communication between users to make technology more engaging and easier to use.</p>
+                        <p>I've been a video game developer for over 10 years, but I still consider myself a beginner due to the vastness of the field and my constant desire to learn more. While I have yet to release a project, I have been diligently exploring various tools and engines, preparing myself for my first major commitment in this realm.</p>
+                        <p>Now, my ambition is to grow as both a full stack and video game developer. I believe that these two areas can intersect in exciting ways and I'm eager to see where my passion for learning and technology will take me.</p>
+                    </Col>
+                    <Col>
+                    <Col>
+                        <div className="profile-pic" style={{backgroundImage: `url(${pic})`}}></div>
+                    </Col>
 
                     </Col>
                 </Row>
@@ -74,7 +84,7 @@ function Projects(){
                 <Container className='left'>
                     <Row>
                         <Col>
-                            <h1 style={{fontSize: `70px`}}>DailyDish</h1>
+                            <h1 style={{fontSize: `80px`, marginBottom: '30px'}}>DailyDish</h1>
                             <p>A professional mock subscription-service website that offers users fully customizable meal plans based on a subscription, incorportating functioning payment system with Stripe API and a strong security system with password hashing with salts.</p>
                             <p>Built with <em>React, Bootstrap, MongoDB, Express, and Stripe API.</em></p>
                             <p>Visit the <a href='https://daily-dish.netlify.app/'>live site!</a></p>
@@ -125,7 +135,7 @@ function Projects(){
                             </Carousel>
                         </Col>
                         <Col>
-                            <h1 style={{fontSize: `70px`}}>NervCorp</h1>
+                            <h1 style={{fontSize: `80px`, marginBottom: '30px'}}>NervCorp</h1>
                             <p>A professional and user-friendly website to represent NervCorp's digital presence, showcasing portfolio, and project updates using React, MongoDB, and smart authentication with Google oAuth.</p>
                             <p>Built with <em>React, Bootstrap, MongoDB, and Express.</em></p>
                             <p>Check out the project github <a href='https://github.com/alisid-0/nervcorp'>here.</a></p>
@@ -135,7 +145,7 @@ function Projects(){
                 <Container className='left'>
                     <Row>
                         <Col>
-                            <h1 style={{fontSize: `70px`}}>Lunaris</h1>
+                            <h1 style={{fontSize: `80px`, marginBottom: '30px'}}>Lunaris</h1>
                             <p>An engaging and immersive videogame in development using Unreal Engine. Focused on creating a captivating user experience with unique gameplay mechanics and visually appealing design.</p>
                             <p>Built with <em>Unreal Engine 5 and Blender.</em></p>
                             <p>Project is still in development but you can check out the <a href='https://nervcorp.itch.io/lunaris'>itch.io site here.</a> and view updates on <a href=''>NervCorp.</a></p>

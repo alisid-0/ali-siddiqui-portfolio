@@ -4,6 +4,11 @@
   padding: 2rem;
   text-align: center;
   background-color: rgba(33,26,44,255);
+  background-image: url('./assets/bg3.png');
+  background-repeat: repeat-y;
+  /* aspect-ratio: 16/9; */
+  background-size: 200%;
+  background-position: 50% 100%;
 }
 
 .row{
@@ -11,6 +16,17 @@
   justify-content: center;
   gap: 5rem
 }
+
+.profile-pic {
+  width: 600px;
+  height: 600px;
+  border-radius: 50%;
+  border: 3px solid white;
+  background-position: 40% 40%; /* Centers the image */
+  background-repeat: no-repeat; /* Prevents the image from repeating */
+  background-size: 110%; /* Adjusts the zoom. 100% is the original size, 120% is 20% zoom. */
+}
+
 
 .intro-content{
   display: flex;
