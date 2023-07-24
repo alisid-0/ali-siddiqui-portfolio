@@ -22,7 +22,7 @@ function App() {
   return (
     <LoginContext.Provider value={{user,setUser,signedIn,setSignedIn}}>
       <Router>
-        <Header/>
+        {/* <Header/> */}
         <Routes>  
           <Route path='/' exact element={<Home/>}/>
           <Route path='/login' element={<Login/>}/>

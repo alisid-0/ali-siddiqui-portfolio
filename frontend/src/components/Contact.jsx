@@ -7,7 +7,7 @@ import Header from './Header'
 
 
 
-function Contact() {
+export default function ContactPage(){
   const form = useRef()
 
   const sendEmail = (e) => {
@@ -25,7 +25,6 @@ function Contact() {
   return (
     <Container className='contact-page'>
         <Container className='contact text-light'>
-        <h1 className='pt-5'>Contact</h1>
         <Container className='contact-container'>
             <Form ref={form} onSubmit={sendEmail} className='contact-form'>
             <Form.Group controlId='user_email' >
@@ -45,4 +44,3 @@ function Contact() {
   )
 }
 
-export default Contact

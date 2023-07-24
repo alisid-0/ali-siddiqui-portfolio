@@ -61,7 +61,6 @@ canvas{
 }
 
 .contact-container{
-  margin-top: 5rem;
   max-width: 500px !important;
 }
 
@@ -83,6 +82,10 @@ canvas{
 
 .login-button{
   margin-left: 63rem !important;
+}
+
+.project-img{
+  max-width: 600px;
 }
 
 @media (max-width: 1399px) {
